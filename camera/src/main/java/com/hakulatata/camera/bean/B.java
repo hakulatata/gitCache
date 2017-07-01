@@ -5,4 +5,5 @@ package com.hakulatata.camera.bean;
  */
 
 public class B {
+
 }
