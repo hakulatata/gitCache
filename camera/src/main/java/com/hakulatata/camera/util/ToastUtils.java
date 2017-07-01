@@ -4,9 +4,7 @@ import android.content.Context;
 import android.widget.Toast;
 
 /**
- * ToastUtils
- * 
- * @author <a href="http://www.trinea.cn" target="_blank">Trinea</a> 2013-12-9
+ * Created by hakulatata on 2017/6/26.
  */
 public class ToastUtils {
 

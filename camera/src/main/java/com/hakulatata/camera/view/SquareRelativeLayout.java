@@ -5,7 +5,7 @@ import android.util.AttributeSet;
 import android.widget.RelativeLayout;
 
 /**
- * Created by Administrator on 2015/10/8.
+ * Created by hakulatata on 2017/6/26.
  */
 public class SquareRelativeLayout extends RelativeLayout {
     public SquareRelativeLayout(Context context, AttributeSet attrs, int defStyle) {

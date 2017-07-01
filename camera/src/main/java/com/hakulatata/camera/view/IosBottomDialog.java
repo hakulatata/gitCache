@@ -19,9 +19,8 @@ import java.util.List;
 
 
 /**
- * Created by Silver on 2017/4/5.
+ * Created by hakulatata on 2017/6/26.
  */
-
 public class IosBottomDialog extends Dialog {
 
     private static final String TAG = IosBottomDialog.class.getSimpleName();

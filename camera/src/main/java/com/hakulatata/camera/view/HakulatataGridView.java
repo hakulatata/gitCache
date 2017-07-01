@@ -6,7 +6,7 @@ import android.view.MotionEvent;
 import android.widget.GridView;
 
 /**
- * Created by lankong on 2015/6/9.
+ * Created by hakulatata on 2017/6/26.
  */
 public class HakulatataGridView extends GridView {
     private boolean haveScrollbar = false;

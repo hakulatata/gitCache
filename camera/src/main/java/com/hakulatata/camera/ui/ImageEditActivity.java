@@ -29,7 +29,9 @@ import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 
-
+/**
+ * Created by hakulatata on 2017/6/26.
+ */
 public class ImageEditActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextView tv_back, tv_title, tv_sure;

@@ -19,8 +19,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- *
- * 文件处理工具类
+ * Created by hakulatata on 2017/6/26.
  */
 
 public class FileUtils {

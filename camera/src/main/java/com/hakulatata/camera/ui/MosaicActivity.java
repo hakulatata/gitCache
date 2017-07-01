@@ -14,7 +14,9 @@ import com.hakulatata.camera.util.ScreenUtils;
 import com.hakulatata.camera.view.mosaic.DrawMosaicView;
 import com.hakulatata.camera.view.mosaic.MosaicUtil;
 
-
+/**
+ * Created by hakulatata on 2017/6/26.
+ */
 public class MosaicActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextView tv_back, tv_title, tv_sure;

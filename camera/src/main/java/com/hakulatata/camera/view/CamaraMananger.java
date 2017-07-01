@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by hakulatata on 2017/6/27.
+ * Created by hakulatata on 2017/6/26.
  */
 
 public class CamaraMananger {

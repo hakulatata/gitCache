@@ -12,9 +12,8 @@ import com.hakulatata.camera.view.CamaraMananger;
 
 
 /**
- * Created by hakulatata on 2017/6/28.
+ * Created by hakulatata on 2017/6/26.
  */
-
 public class PhotoPickerActivity extends AppCompatActivity {
 
     private FrameLayout camaraContent;

@@ -12,7 +12,7 @@ import com.hakulatata.camera.holder.ViewHolder;
 import java.util.List;
 
 /**
- * Created by Administrator on 2015/9/21.
+ * Created by hakulatata on 2017/6/26.
  */
 public abstract class CommonAdapter<T> extends BaseAdapter {
     protected List<T> datas;

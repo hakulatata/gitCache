@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * Created by Administrator on 2015/9/21.
+ * Created by hakulatata on 2017/6/26.
  */
 public class ViewHolder {
     private SparseArray<View> mViews;

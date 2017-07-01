@@ -25,7 +25,7 @@ import java.util.List;
 
 
 /**
- * Created by Silver on 2017/4/6.
+ * Created by hakulatata on 2017/6/26.
  */
 
 public class GalleryPopupWindow extends PopupWindow {

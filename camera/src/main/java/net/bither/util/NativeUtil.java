@@ -23,9 +23,7 @@ import android.graphics.Rect;
 import android.util.Log;
 
 /**
- * 静态库压缩图片
- *
- * @author xy418
+ * Created by hakulatata on 2017/6/26.
  */
 public class NativeUtil {
     private static int DEFAULT_QUALITY = 95;

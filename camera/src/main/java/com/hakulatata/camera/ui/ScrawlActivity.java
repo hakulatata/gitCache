@@ -22,7 +22,9 @@ import com.hakulatata.camera.view.scrawl.ScrawlTools;
 import java.util.Timer;
 import java.util.TimerTask;
 
-
+/**
+ * Created by hakulatata on 2017/6/26.
+ */
 public class ScrawlActivity extends AppCompatActivity implements View.OnClickListener {
 
     Timer timer = new Timer();

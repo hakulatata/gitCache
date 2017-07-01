@@ -5,7 +5,9 @@ import android.graphics.Bitmap.Config;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Rect;
-
+/**
+ * Created by hakulatata on 2017/6/26.
+ */
 public class MosaicUtil
 {
 

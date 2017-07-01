@@ -11,10 +11,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 
 /**
- * 项目：property
- * 包名：com.beok.property.util
- * Created by zyh on 2017/4/26.15:05
- * todo
+ * Created by hakulatata on 2017/6/26.
  */
 
 

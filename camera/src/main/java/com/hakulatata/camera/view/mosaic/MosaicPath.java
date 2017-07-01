@@ -1,7 +1,9 @@
 package com.hakulatata.camera.view.mosaic;
 
 import android.graphics.Path;
-
+/**
+ * Created by hakulatata on 2017/6/26.
+ */
 public class MosaicPath
 {
 	/**

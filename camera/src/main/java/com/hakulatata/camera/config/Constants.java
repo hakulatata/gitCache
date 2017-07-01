@@ -3,9 +3,8 @@ package com.hakulatata.camera.config;
 import android.os.Environment;
 
 /**
- * Created by hakulatata on 2017/6/25.
+ * Created by hakulatata on 2017/6/26.
  */
-
 public class Constants {
     public static final class PictureInfo {
 

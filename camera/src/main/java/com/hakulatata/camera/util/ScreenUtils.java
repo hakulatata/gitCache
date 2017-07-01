@@ -16,9 +16,8 @@ import android.view.Window;
 import android.view.WindowManager;
 
 import java.io.File;
-
 /**
- * Created by Administrator on 2015/9/16.
+ * Created by hakulatata on 2017/6/26.
  */
 public class ScreenUtils {
     private static int screenW;

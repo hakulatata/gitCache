@@ -21,11 +21,9 @@ import com.hakulatata.camera.holder.ViewHolder;
 
 import java.util.List;
 
-
 /**
- * Created by Silver on 2017/4/6.
+ * Created by hakulatata on 2017/6/26.
  */
-
 public class AlbumListPopupWindow extends PopupWindow {
 
     private int mWidth, mHeight;

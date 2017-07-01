@@ -6,17 +6,11 @@ import android.util.Log;
 import java.util.List;
 
 /**
- * @author itheima
- * @time 	2015-6-23 上午11:33:49
- * @des	   日志级别是LEVEL_ALL显示所有信息,包括System.out.println信息
- * @des  日志级别是LEVEL_OFF关闭所有信息,包括System.out.println信息
- * @updateAuthor TODO
- * @updateTime TODO
- * @updateDes TODO
+ * Created by hakulatata on 2017/6/26.
  */
 public class LogUtil {
 	/** 日志输出时的TAG */
-	private static String mTag = "悦物业";
+	private static String mTag = "hakulatata";
 	/** 日志输出级别NONE */
 	public static final int LEVEL_OFF = 0;
 	/** 日志输出级别NONE */

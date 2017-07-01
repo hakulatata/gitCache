@@ -37,7 +37,9 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-
+/**
+ * Created by hakulatata on 2017/6/26.
+ */
 public class AlbumActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextView tv_back, tv_title, tv_sure;
