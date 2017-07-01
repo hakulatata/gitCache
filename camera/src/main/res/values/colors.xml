@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="c8">#e1e1e1</color>
+    <color name="gray_aaa">#aaaaaa</color>
+    <color name="text_color_blue_007AFF">#007aff</color>
+    <color name="thirdly_text">#999999</color>
+    <color name="shouye_header_black">#2678F7</color>
+
+
+</resources>

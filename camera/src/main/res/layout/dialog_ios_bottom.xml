@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <LinearLayout
+        android:id="@+id/bottom_dialog_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_dialog_cancel"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bottom_dialog_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="30dp"
+            android:clickable="false"
+            android:gravity="center"
+            android:textSize="12sp"
+            tools:text="添加图片"/>
+
+        <View
+            android:id="@+id/bottom_dialog_title_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/thirdly_text" />
+
+        <LinearLayout
+            android:id="@+id/options_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/bottom_dialog_cancel_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bottom_dialog_ll"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bottom_dialog_cancel"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="取消"
+        android:textColor="@color/text_color_blue_007AFF"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

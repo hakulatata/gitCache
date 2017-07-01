@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_top"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/layout_height_repair"
+    android:background="@color/shouye_header_black">
+
+    <ImageView
+        android:id="@+id/iv_header_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/iv_header_margin"
+        android:src="@drawable/back_arrow"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_header_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/iv_header_margin"
+        android:drawableLeft="@drawable/back_arrow"
+        android:gravity="center_vertical"
+        android:text="返回"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="尚景花园"
+        android:drawablePadding="@dimen/tiny_space"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/img_down_arrow"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tv_title"
+        android:layout_alignTop="@+id/tv_title"
+        android:src="@drawable/select_below_w"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_header_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/iv_header_margin"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_header_right"
+        android:layout_width="@dimen/details_icon"
+        android:layout_height="@dimen/details_icon"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/iv_header_margin"
+        android:visibility="gone" />
+
+</RelativeLayout>
