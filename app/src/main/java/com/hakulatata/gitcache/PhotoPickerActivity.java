@@ -1,4 +1,4 @@
-package com.hakulatata.camera.ui;
+package com.hakulatata.gitcache;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,8 @@ import android.widget.FrameLayout;
 import com.hakulatata.camera.R;
 import com.hakulatata.camera.util.LogUtil;
 import com.hakulatata.camera.view.CamaraMananger;
+
+import java.util.List;
 
 
 /**
@@ -29,9 +31,13 @@ public class PhotoPickerActivity extends AppCompatActivity {
     }
 
     private void initListener() {
-        camaraMananger.setOnCamaraSuccessListener(imgPathList -> {
-            for (String s : imgPathList) {
-                LogUtil.d(s);
+
+        camaraMananger.setOnCamaraSuccessListener(new CamaraMananger.OnCamaraSuccessListener() {
+            @Override
+            public void onSuccessListener(List<String> imgPathList) {
+                for (String s : imgPathList) {
+                    LogUtil.d(s);
+                }
             }
         });
     }
