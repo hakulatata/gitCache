@@ -33,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="尚景花园"
+        android:text="天上人间"
         android:drawablePadding="@dimen/tiny_space"
         android:textColor="@color/white"
         android:textSize="18sp" />
