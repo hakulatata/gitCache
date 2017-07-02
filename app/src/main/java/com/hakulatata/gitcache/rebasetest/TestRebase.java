@@ -25,4 +25,9 @@ public class TestRebase {
 
     /*
     * git tag test*/
+
+    /*
+    * git push -f
+    * 强制推送
+    * */
 }
