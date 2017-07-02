@@ -11,4 +11,8 @@ public class TestRebase {
     /*
     *
     * change to the master branch*/
+
+    /*
+    *
+    * change to the master branch again*/
 }
