@@ -13,6 +13,9 @@ public class TestRebase {
     * in the dev branch commit */
 
     /*
+    * in the dev branch commit again*/
+
+    /*
     *
     * change to the master branch*/
 
