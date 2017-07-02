@@ -15,7 +15,6 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-
 import com.hakulatata.camera.R;
 import com.hakulatata.camera.config.Constants;
 import com.hakulatata.camera.util.FileUtils;
@@ -34,14 +33,28 @@ import java.util.TimerTask;
  */
 public class ImageEditActivity extends AppCompatActivity implements View.OnClickListener {
 
+    Timer timer = new Timer();
+    TimerTask task = new TimerTask() {
+        public void run() {
+            myHandler.sendEmptyMessage(0);
+        }
+    };
     private TextView tv_back, tv_title, tv_sure;
     private ImageView img_target;
     private TextView tv_date, tv_time, tv_address;
     private ImageView btn_scrawl, btn_mosaic;
     private RelativeLayout rl_content, rl_center;
-
     private String tempPath;
     private String imagePath;
+    Handler myHandler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            if (rl_center.getWidth() != 0) {
+                timer.cancel();
+                compressed();
+            }
+        }
+    };
     private Context mContext;
 
     @Override
@@ -95,31 +108,16 @@ public class ImageEditActivity extends AppCompatActivity implements View.OnClick
         btn_mosaic = (ImageView) findViewById(R.id.btn_mosaic);
     }
 
-    Handler myHandler = new Handler() {
-        @Override
-        public void handleMessage(Message msg) {
-            if (rl_center.getWidth() != 0) {
-                timer.cancel();
-                compressed();
-            }
-        }
-    };
-
-    Timer timer = new Timer();
-    TimerTask task = new TimerTask() {
-        public void run() {
-            myHandler.sendEmptyMessage(0);
-        }
-    };
-
+    /*
+    * 奇怪 module 的R文件居然不是final 的*/
     @Override
     public void onClick(View v) {
         Intent intent = null;
         int id = v.getId();
-        if (id==R.id.tv_header_left){
+        if (id == R.id.tv_header_left) {
             finish();
 
-        }else if (id==R.id.tv_header_right){
+        } else if (id == R.id.tv_header_right) {
             Bitmap bit = getBitmap(rl_content);
 
             FileUtils.writeImage(bit, imagePath, 100);
@@ -128,11 +126,11 @@ public class ImageEditActivity extends AppCompatActivity implements View.OnClick
             okData.putExtra("Image_Path", imagePath);
             setResult(RESULT_OK, okData);
             finish();
-        }else if (id==R.id.btn_scrawl){
+        } else if (id == R.id.btn_scrawl) {
             intent = new Intent(this, ScrawlActivity.class);
             intent.putExtra("Image_Path", imagePath);
             this.startActivityForResult(intent, Constants.PictureInfo.REQUEST_CODE_EDIT_PHOTO_SCRAWL);
-        }else if (id==R.id.btn_mosaic){
+        } else if (id == R.id.btn_mosaic) {
             intent = new Intent(this, MosaicActivity.class);
             intent.putExtra("Image_Path", imagePath);
             this.startActivityForResult(intent, Constants.PictureInfo.REQUEST_CODE_EDIT_PHOTO_MOSAIC);
@@ -147,7 +145,7 @@ public class ImageEditActivity extends AppCompatActivity implements View.OnClick
 
     private void compressed() {
         Bitmap resizeBmp = ScreenUtils.compressionFiller(tempPath, rl_center);
-        if (resizeBmp!=null){
+        if (resizeBmp != null) {
             RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(resizeBmp.getWidth(), resizeBmp.getHeight());
             layoutParams.addRule(RelativeLayout.CENTER_IN_PARENT);
             rl_content.setLayoutParams(layoutParams);
