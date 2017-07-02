@@ -10,6 +10,10 @@ public class TestRebase {
 
     /*
     *
+    * in the dev branch commit */
+
+    /*
+    *
     * change to the master branch*/
 
     /*
