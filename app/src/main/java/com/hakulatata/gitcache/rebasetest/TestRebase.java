@@ -7,4 +7,8 @@ package com.hakulatata.gitcache.rebasetest;
 public class TestRebase {
     /*
     * first the bean*/
+
+    /*
+    *
+    * change to the master branch*/
 }
